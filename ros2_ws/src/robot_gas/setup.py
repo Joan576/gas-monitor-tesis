@@ -20,10 +20,11 @@ setup(
     description='Gas detection node and publisher',
     license='MIT',
     entry_points={
-        'console_scripts': [
-            'gas_sensor = robot_gas.gas_sensor:main',
+	    'console_scripts': [
             'gas_publisher = robot_gas.gas_publisher:main',
-	    'gas_to_influx = robot_gas.gas_to_influx:main',
-        ],
+            'gas_to_influx = robot_gas.gas_to_influx:main',
+            'gas_xy_to_influx = robot_gas.gas_xy_to_influx:main',
+   	 ],
     },
+
 )
